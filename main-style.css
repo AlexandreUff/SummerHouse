@@ -125,7 +125,7 @@ footer {
 /*Responsividade*/
 @media (max-height: 531px) {
   body {
-    height: 200vh;
+    height: 630px;
     background-size: 250% 130%;
   }
 
