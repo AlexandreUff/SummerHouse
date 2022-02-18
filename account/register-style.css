@@ -26,6 +26,9 @@ body {
   color: orange;
   margin-top: 10px;
 }
+.register-area header {
+  user-select: none;
+}
 .register-area header .content h1 {
   font-family: "Shadows Into Light", cursive;
   font-weight: 700;
@@ -85,6 +88,16 @@ body {
 .register-area main form input:disabled {
   background-color: #aaaaaa;
   cursor: not-allowed;
+}
+.register-area main form #cpf-usuario::-webkit-inner-spin-button, .register-area main form #rg-usuario::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.register-area main form #cpf-usuario, .register-area main form #rg-usuario {
+  -moz-appearance: textfield;
+  min-width: 260px;
+}
+.register-area main form #psw-usuario, .register-area main form #rp-psw-usuario {
+  min-width: 276px;
 }
 
 label {

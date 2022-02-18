@@ -29,6 +29,7 @@ body{
     margin-top: 10px;
 
     header{
+        user-select: none;
         .content{
             h1{
                 font-family: 'Shadows Into Light', cursive;
@@ -102,6 +103,19 @@ body{
             input:disabled{
                 background-color: rgb(170, 170, 170);
                 cursor:not-allowed;
+            }
+
+            #cpf-usuario::-webkit-inner-spin-button, #rg-usuario::-webkit-inner-spin-button { 
+                -webkit-appearance: none;
+            }
+
+            #cpf-usuario, #rg-usuario{ 
+                -moz-appearance: textfield;
+                min-width: 260px;
+            }
+
+            #psw-usuario, #rp-psw-usuario{
+                min-width: 276px;
             }
         }
     }

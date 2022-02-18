@@ -16,27 +16,27 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
 
-    /* transition: 10s; */
+    transition: 10s;
 }
 
 .bg-fundo0{
     background-image: url('./design/bg-img0.jpg');
-    transition: 10s;
+    /* transition: 10s; */
 }
 
 .bg-fundo1{
     background-image: url('./design/bg-img1.jpg');
-    transition: 10s;
+    /* transition: 10s; */
 }
 
 .bg-fundo2{
     background-image: url('./design/bg-img2.jpg');
-    transition: 10s;
+    /* transition: 10s; */
 }
 
 .bg-fundo3{
     background-image: url('./design/bg-img3.jpg');
-    transition: 10s;
+    /* transition: 10s; */
 }
 
 
@@ -51,6 +51,7 @@ body{
     margin-top: 10px;
 
     header{
+        user-select: none;
         .content{
             h1{
                 font-family: 'Shadows Into Light', cursive;
