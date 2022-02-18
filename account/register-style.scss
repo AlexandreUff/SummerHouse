@@ -1,0 +1,139 @@
+/* @use 'sass:math'; */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300&display=swap');
+
+/* @debug math.random(4) - 1;
+$alternador-bg: math.random(4) - 1;
+@debug $alternador-bg; */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-image: url('../design/bg-register.jpg');
+}
+
+.register-area{
+    background-color: #000000ab;
+    width: 570px;
+    height: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    color: orange;
+    margin-top: 10px;
+
+    header{
+        .content{
+            h1{
+                font-family: 'Shadows Into Light', cursive;
+                font-weight: 700;
+                margin: 0px;
+            }
+    
+            svg{
+                width: 40px;
+            }
+        }
+
+        h2{
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        h2:before, h2:after{
+            content: '';
+            display: inline-block;
+            background-color: orange;
+            position: relative;
+            top: -5px;
+            width: 12%;
+            height: 1px;
+            margin: 0px 4px;
+        }
+    }
+
+    main{
+        height: 70%;
+
+        h3{
+            text-align: center;
+        }
+
+        form{
+            overflow: hidden;
+
+            .slider{
+                display: flex;
+                width: 300%;
+                position: relative;
+            }
+
+            .content-form-area{
+                width: 33.33%;
+                padding: 0px 2px;
+            }
+
+            /*Posicionadores do Slide. São adicionados e removidos conforme passa o slide.*/
+            .position-0{
+                left: 0px;
+                transition: .3s;
+            }
+
+            .position-1{
+                left: -100%;
+                transition: .3s;
+            }
+
+            .position-2{
+                left: -200%;
+                transition: .3s;
+            }
+
+            .buttons-slide{
+                border-bottom: 1px solid orange;
+            }
+
+            input:disabled{
+                background-color: rgb(170, 170, 170);
+                cursor:not-allowed;
+            }
+        }
+    }
+
+}
+
+label{
+    cursor: pointer;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+}
+
+/*Responsividade*/
+@media(max-height:607px){
+
+    body{
+        height: 630px;
+        background-size: 250% 130%;
+    }
+
+    .register-area{
+        position: absolute;
+        top: 10px;
+        height: 425px;
+    }
+}
+
+@media(max-width:580px){
+    .register-area{
+        width: 97%;
+    }
+}

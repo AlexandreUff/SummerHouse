@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* @use 'sass:math'; */
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300&display=swap");
+/* @debug math.random(4) - 1;
+$alternador-bg: math.random(4) - 1;
+@debug $alternador-bg; */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../design/bg-register.jpg");
+}
+
+.register-area {
+  background-color: #000000ab;
+  width: 570px;
+  height: 70%;
+  border-radius: 15px;
+  overflow: hidden;
+  color: orange;
+  margin-top: 10px;
+}
+.register-area header .content h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 700;
+  margin: 0px;
+}
+.register-area header .content svg {
+  width: 40px;
+}
+.register-area header h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.register-area header h2:before, .register-area header h2:after {
+  content: "";
+  display: inline-block;
+  background-color: orange;
+  position: relative;
+  top: -5px;
+  width: 12%;
+  height: 1px;
+  margin: 0px 4px;
+}
+.register-area main {
+  height: 70%;
+}
+.register-area main h3 {
+  text-align: center;
+}
+.register-area main form {
+  overflow: hidden;
+  /*Posicionadores do Slide. São adicionados e removidos conforme passa o slide.*/
+}
+.register-area main form .slider {
+  display: flex;
+  width: 300%;
+  position: relative;
+}
+.register-area main form .content-form-area {
+  width: 33.33%;
+  padding: 0px 2px;
+}
+.register-area main form .position-0 {
+  left: 0px;
+  transition: 0.3s;
+}
+.register-area main form .position-1 {
+  left: -100%;
+  transition: 0.3s;
+}
+.register-area main form .position-2 {
+  left: -200%;
+  transition: 0.3s;
+}
+.register-area main form .buttons-slide {
+  border-bottom: 1px solid orange;
+}
+.register-area main form input:disabled {
+  background-color: #aaaaaa;
+  cursor: not-allowed;
+}
+
+label {
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/*Responsividade*/
+@media (max-height: 607px) {
+  body {
+    height: 630px;
+    background-size: 250% 130%;
+  }
+
+  .register-area {
+    position: absolute;
+    top: 10px;
+    height: 425px;
+  }
+}
+@media (max-width: 580px) {
+  .register-area {
+    width: 97%;
+  }
+}
+
+/*# sourceMappingURL=register-style.css.map */
