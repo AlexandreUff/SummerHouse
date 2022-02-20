@@ -61,7 +61,7 @@
 
             <div class="form-group mb-1">
               <label class="w-100" title="Nome">Nome:
-                <input type="text" class="form-control" id="nome-usuario" aria-describedby="userFirstName"
+                <input type="text" name="Nome" class="form-control" id="nome-usuario" aria-describedby="userFirstName"
                   placeholder="Nome">
               </label>
             </div>
@@ -166,7 +166,7 @@
             </svg>
             Limpar campos
           </button>
-          <button type="submit" class="btn btn-success" title="Enviar formulário">
+          <button type="submit" class="btn btn-success" id="btn-submit" title="Enviar formulário" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
@@ -205,6 +205,7 @@
 
 <!--
     A fazer:
-    - Colocar um CSS para os inputs disableds;
-    - Acertar o limpar tudo com relação aos disableds;
+    - Verificar se as informações nos inputs disableds não são enviadas. Caso sim, criar um bloqueio;
+    - Pôr um método para remover o small de erro assim que for corrigido;
+    - Criar o bloqueio de cadastro para menores de 16 anos.
 -->

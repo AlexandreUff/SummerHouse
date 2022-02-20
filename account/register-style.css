@@ -20,7 +20,7 @@ body {
 .register-area {
   background-color: #000000ab;
   width: 570px;
-  height: 70%;
+  height: 72%;
   border-radius: 15px;
   overflow: hidden;
   color: orange;
@@ -107,6 +107,14 @@ label {
 footer {
   position: fixed;
   bottom: 0;
+}
+
+.input-error {
+  color: #ff4e4e;
+  font-size: 0.6rem;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: aqua; */
 }
 
 /*Responsividade*/
