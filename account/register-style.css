@@ -20,7 +20,7 @@ body {
 .register-area {
   background-color: #000000ab;
   width: 570px;
-  height: 72%;
+  min-height: 70%;
   border-radius: 15px;
   overflow: hidden;
   color: orange;
