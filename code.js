@@ -21,7 +21,7 @@ console.log(`
     - CSS;
     - Javascript;
     - Bootstrap;
-    - SASS/SCSS
+    - SASS/SCSS.
 
     *Objetivo da página:
     - Página de login de um hotel responsiva com um link para registro no site.
@@ -30,9 +30,11 @@ console.log(`
     - A página tem como finalidade a simulação um formulário de login e um link para uma outra página (do mesmo site, obviamente) para registrar-se no hotel;
     - Para cada load da página de login, há uma alteração randômica de até 4 imagens do plano de fundo que se apresentam com um mesmo efeito e com a temática do estabelecimento;
     - Na página de registro do hotel, há um outro formulário com um slider que contém os inputs de preenchimento com os dados do usuário (Essas requisições do formulário não tentam imitar a de um Hotel mesmo);
-    - O botão de confirmação só sai do modo "disabled" quando todos os campos são preenchidos;
-    - Os campos possuem apenas um bloqueio "singelo" padrão dos inputs HTML para impedir que o usuário insira informações errôneas no formulário;
-    - 
+    - O botão de confirmação só sai do modo "disabled" quando todos os campos são corretamente preenchidos;
+    - Os campos, em sua maioria, possuem apenas um bloqueio "singelo" padrão dos inputs HTML para impedir que o usuário insira informações errôneas no formulário;
+    - Já os campos de Data de Nascimento e Senha/Repetir Senha possuem uma mensagem de alerta para caso sejam preenchidos indevidamente;
+    - O campo de Data de Nascimento bloqueia o Confirmar e emite uma alerta caso a idade do inscrito seja menor que 18 anos;
+    - O campo de Repetir Senha bloqueia o Confirmar e emite uma alerta caso a seu preenchimento seja diferente do Senha.
 
     *Considerações importantes:
     - Apesar do bootstrap oferecer um slider(carousel) com recursos já predefinidos; para a finalidade deste projeto, não foi muito conveniente e exigiria alterações que, no fim, acabariam dando mais trabalho tornando preferível, portanto, implementar um slider próprio.
