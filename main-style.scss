@@ -1,9 +1,7 @@
 /* @use 'sass:math'; */
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300&display=swap');
 
-/* @debug math.random(4) - 1;
-$alternador-bg: math.random(4) - 1;
-@debug $alternador-bg; */
+$main-color: #ffa500;
 
 * {
     padding: 0px;
@@ -21,22 +19,18 @@ body{
 
 .bg-fundo0{
     background-image: url('./design/bg-img0.jpg');
-    /* transition: 10s; */
 }
 
 .bg-fundo1{
     background-image: url('./design/bg-img1.jpg');
-    /* transition: 10s; */
 }
 
 .bg-fundo2{
     background-image: url('./design/bg-img2.jpg');
-    /* transition: 10s; */
 }
 
 .bg-fundo3{
     background-image: url('./design/bg-img3.jpg');
-    /* transition: 10s; */
 }
 
 
@@ -47,7 +41,7 @@ body{
     min-height: 530px;
     border-radius: 15px;
     overflow: hidden;
-    color: orange;
+    color: $main-color;
     margin-top: 10px;
 
     header{
@@ -72,7 +66,7 @@ body{
         h2:before, h2:after{
             content: '';
             display: inline-block;
-            background-color: orange;
+            background-color: $main-color;
             position: relative;
             top: -5px;
             width: 20%;
@@ -92,7 +86,7 @@ body{
     p.separador:before,p.separador:after{
         content: '';
         display: inline-block;
-        background-color: orange;
+        background-color: $main-color;
         position: relative;
         top: -5px;
         width: 40%;
@@ -115,7 +109,7 @@ body{
         width: 42%;
         margin: 0px auto;
         border-radius: 15px;
-        background-color: orange;
+        background-color: $main-color;
         transition: .2s;
 
         a {

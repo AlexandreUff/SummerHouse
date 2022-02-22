@@ -1,9 +1,8 @@
 /* @use 'sass:math'; */
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300&display=swap');
 
-/* @debug math.random(4) - 1;
-$alternador-bg: math.random(4) - 1;
-@debug $alternador-bg; */
+$main-color: #ffa500;
+$error-color: #ff4e4e;
 
 * {
     padding: 0px;
@@ -25,7 +24,7 @@ body{
     min-height: 70%;
     border-radius: 15px;
     overflow: hidden;
-    color: orange;
+    color: $main-color;
     margin-top: 10px;
 
     header{
@@ -50,7 +49,7 @@ body{
         h2:before, h2:after{
             content: '';
             display: inline-block;
-            background-color: orange;
+            background-color: $main-color;
             position: relative;
             top: -5px;
             width: 12%;
@@ -97,7 +96,7 @@ body{
             }
 
             .buttons-slide{
-                border-bottom: 1px solid orange;
+                border-bottom: 1px solid $main-color;
             }
 
             input:disabled{
@@ -132,12 +131,12 @@ footer{
 }
 
 .input-error{
-    color: rgb(255, 78, 78);
+    color: $error-color;
     font-size: .6rem;
     margin: 0px;
     padding: 0px;
-    /* background-color: aqua; */
 }
+
 
 /*Responsividade*/
 @media(max-height:607px){

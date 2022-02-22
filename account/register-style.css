@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* @use 'sass:math'; */
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Shadows+Into+Light&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300&display=swap");
-/* @debug math.random(4) - 1;
-$alternador-bg: math.random(4) - 1;
-@debug $alternador-bg; */
 * {
   padding: 0px;
   margin: 0px;
@@ -23,7 +20,7 @@ body {
   min-height: 70%;
   border-radius: 15px;
   overflow: hidden;
-  color: orange;
+  color: #ffa500;
   margin-top: 10px;
 }
 .register-area header {
@@ -44,7 +41,7 @@ body {
 .register-area header h2:before, .register-area header h2:after {
   content: "";
   display: inline-block;
-  background-color: orange;
+  background-color: #ffa500;
   position: relative;
   top: -5px;
   width: 12%;
@@ -83,7 +80,7 @@ body {
   transition: 0.3s;
 }
 .register-area main form .buttons-slide {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid #ffa500;
 }
 .register-area main form input:disabled {
   background-color: #aaaaaa;
@@ -114,7 +111,6 @@ footer {
   font-size: 0.6rem;
   margin: 0px;
   padding: 0px;
-  /* background-color: aqua; */
 }
 
 /*Responsividade*/

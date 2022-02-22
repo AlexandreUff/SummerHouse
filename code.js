@@ -34,7 +34,7 @@ console.log(`
     - Os campos, em sua maioria, possuem apenas um bloqueio "singelo" padrão dos inputs HTML para impedir que o usuário insira informações errôneas no formulário;
     - Já os campos de Data de Nascimento e Senha/Repetir Senha possuem uma mensagem de alerta para caso sejam preenchidos indevidamente;
     - O campo de Data de Nascimento bloqueia o Confirmar e emite uma alerta caso a idade do inscrito seja menor que 18 anos;
-    - O campo de Repetir Senha bloqueia o Confirmar e emite uma alerta caso a seu preenchimento seja diferente do Senha.
+    - O campo de Repetir Senha bloqueia o Confirmar e emite uma alerta caso o seu preenchimento seja diferente do campo Senha.
 
     *Considerações importantes:
     - Apesar do bootstrap oferecer um slider(carousel) com recursos já predefinidos; para a finalidade deste projeto, não foi muito conveniente e exigiria alterações que, no fim, acabariam dando mais trabalho tornando preferível, portanto, implementar um slider próprio.
